@@ -12,27 +12,16 @@
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #050a1a, #0d132b);
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      overflow: hidden;
-      background-image: url('chip-image.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 20px;
-      backdrop-filter: blur(5px);
-      animation: fadeIn 1s ease forwards;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
     .title {
@@ -43,20 +32,28 @@
     }
 
     .version {
-      font-size: 1em;
+      font-size: 0.9em;
       color: #cfcfcf;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       opacity: 0;
       animation: fadeInDown 1s ease 0.3s forwards;
     }
 
+    .chip {
+      width: 200px;
+      height: auto;
+      margin-bottom: 25px;
+      opacity: 0;
+      animation: fadeIn 1.2s ease 0.6s forwards;
+    }
+
     .app-icon {
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       border-radius: 20%;
       margin-bottom: 10px;
       opacity: 0;
-      animation: fadeIn 1.2s ease 0.6s forwards;
+      animation: fadeIn 1.2s ease 0.9s forwards;
     }
 
     .app-name {
@@ -64,7 +61,7 @@
       font-weight: bold;
       margin-bottom: 20px;
       opacity: 0;
-      animation: fadeInUp 1s ease 0.9s forwards;
+      animation: fadeInUp 1s ease 1.2s forwards;
     }
 
     .download-btn {
@@ -78,9 +75,10 @@
       font-weight: bold;
       transition: background 0.3s ease, transform 0.2s ease;
       opacity: 0;
-      animation: fadeInUp 1s ease 1.2s forwards;
+      animation: fadeInUp 1s ease 1.5s forwards;
       text-decoration: none;
       display: inline-block;
+      margin-bottom: 40px;
     }
 
     .download-btn:hover {
@@ -89,19 +87,19 @@
     }
 
     .socials {
-      margin-top: 40px;
       display: flex;
       gap: 20px;
       justify-content: center;
+      align-items: center;
       opacity: 0;
-      animation: fadeIn 1s ease 1.5s forwards;
+      animation: fadeInUp 1s ease 2s forwards;
     }
 
     .socials a {
-      font-size: 1.5em;
       color: white;
       text-decoration: none;
-      transition: transform 0.2s ease;
+      font-size: 1.4em;
+      transition: transform 0.3s ease;
     }
 
     .socials a:hover {
@@ -142,21 +140,21 @@
     }
   </style>
 
-  <!-- أيقونات Font Awesome -->
-  <script src="https://kit.fontawesome.com/a2e0c6a1fd.js" crossorigin="anonymous"></script>
+  <!-- أيقونات FontAwesome -->
+  <script src="https://kit.fontawesome.com/8dd630be69.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="overlay">
-    <div class="title" translate="no">Welcome !</div>
-    <div class="version" translate="no">Version 1.0 Developed by Walid Rouibah 2025</div>
-    <img src="app-icon.png" alt="App Icon" class="app-icon" translate="no" />
-    <div class="app-name" translate="no">WR ai Chat</div>
-    <a href="WR-ai-Chat.apk" class="download-btn" download translate="no">DOWNLOAD</a>
-    <div class="socials">
-      <a href="https://x.com/wal_rou?t=thtS3cY040JYFzEXaJxbuA&s=09" target="_blank"><i class="fab fa-x-twitter"></i></a>
-      <a href="https://www.instagram.com/wal_rou?igsh=MXVkN2Q3ZWF6dmphMg==" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/walid.rouibah.524840" target="_blank"><i class="fab fa-facebook"></i></a>
-    </div>
+  <div class="title" translate="no">Welcome !</div>
+  <div class="version" translate="no">Version 1.0.0 – Developed by Walid Rouibah 2025</div>
+  <img src="chip-image.png" alt="Chip" class="chip" translate="no" />
+  <img src="app-icon.png" alt="App Icon" class="app-icon" translate="no" />
+  <div class="app-name" translate="no">WR ai Chat</div>
+  <a href="WR-ai-Chat.apk" class="download-btn" download translate="no">DOWNLOAD</a>
+
+  <div class="socials">
+    <a href="https://x.com/wal_rou?t=thtS3cY040JYFzEXaJxbuA&s=09" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.instagram.com/wal_rou?igsh=MXVkN2Q3ZWF6dmphMg==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/walid.rouibah.524840" target="_blank"><i class="fab fa-facebook"></i></a>
   </div>
 </body>
 </html>
